@@ -193,8 +193,7 @@ X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
 # Hyperparameter Tuning for logistic regression
 # Instead of using default hyperparameters, we search for the best regularization strength
 # GridSearchCV is able to use cross-validation to find the best value for alpha
-
-# helps avoid
+# helps avoid overfitting
 from sklearn.model_selection import GridSearchCV
 
 # finding the best "C" value (reg. strength)
